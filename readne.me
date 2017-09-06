@@ -1,0 +1,151 @@
+# h1 箇条書き
+- item1
+- item2
+- item3
+- [ctr1]+[shift]+[m]キー
+
+もう一つの大見出し
+===
+
+中見出し
+---
+
+## h2 タグのタイトル
+
+### h3 小見出し
+
+###### h6まで使える
+
+hello.
+hello. hello.hello. hello.
+hello. hello. hello. hello. hello.
+hello. hello. hello. hello.
+
+改行だけでは改行にならない。改行前にスペース2つ以上入れると
+改行になる
+
+hello.
+ hello. hello. hello. hello.
+hello. hello. hello. hello. hello.
+hello. hello. hello. hello.
+
+#　引用
+> quote. quote. quote. quote.
+quote. quote. quote.
+
+##引用とは
+他の著作者の一部を抜枠して、それについて述べたりすること。
+本文と明確に異なる書式にする
+
+# 区切り線
+---
+***
+- - -
+___
+
+ 上に行があるとH2になってしまう
+ ---
+
+# 強調表現
+普通　*強調* 普通
+
+normal *kyouchou* normal
+
+normal_kyoucou_normal
+
+普通**強調2**普通
+
+normal**kyouchou2**normal
+
+普通__強調2__普通
+
+normal__kyouchou2__nomal
+
+# 箇条書き
+- item1
+- item2
+
+ 　　　　段下げすた状態で分を記載できる。
+ 前後に空行を入れて、４つ半角スペースを入れる。
+
+- item3
+
+# 連番リスト
+1.数字、ドット、スペース
+2.数字は何でもよい
+1.これでも３になる
+1.よくやるのは、**全て1.**にする
+
+# リンク
+<http://dotinstall.com>
+
+http://dotinstall.com
+
+[リンクの文字](http://dotinstall.con)
+
+[ホバー](http://dotinstall.con"ドットインストール")
+
+利用したアセットへのリンクなどで活用するとよい
+
+# コードを見やすく
+```
+//[shift]+[@]キー
+function　x(){
+     feturn xj
+}
+```
+
+文章内でコードをあらわす場合
+、`function`などと書く。
+
+```javascript
+//[shift]+[@]キー
+function x(){
+    return xj
+}
+```
+
+バックフォート３つの後ろに語源を現す
+つづりを書くと、その語源用のハイライトが行われる。
+C#ならcs、HTMLならhtml。c語源ならc
+
+```c
+void main(){
+    return 0;
+}
+```
+
+# 箇条書きのインデント
+- 箇条書き
+  - スペース2つで箇条書きで、段下げ
+      - スペース4つでさらに下げる
+  - 1段戻す
+- 元に戻る
+
+1. 連番も同様
+ 　1. 下げる
+ 　1. 上げる
+1. 戻す
+
+# 画像
+
+![ALT属性](http://dotinstall.com/img/logo_200x200.png)
+
+- ALT属性とは、画像が取得できなかったり、非表示のときに、
+代わりに表示される文字列
+
+![ALT属性](http://dotinstall.com/img/logo_200x200.png "ドットインストール")
+
+## 画像にリンク
+[![ALT属性](http://dotinstall.com/img/logo_200x200.png "ドットインストール")](http://dotinstall.com)
+
+リンクと画像を組み合わせたもの。ブラケットの内に、
+画像のマークダウンを書いて、()内にリンク先URLを書く。
+
+## マークダウンファイルと同じ場所の画像へのリンク
+ - [いらすとや](http://www.irasutoya.com/)
+
+ - いらすとやで適当な画像を2回ほどクリックして、画像だけ表示されるようにする。
+ - 画像を右クリックして、[名前をつけて画像を保存]を選択して、デスクトップに保存
+
+ ![ゆず湯に入るぴょこのイラスト](pyoko_onsen_yuzuyu.png)
